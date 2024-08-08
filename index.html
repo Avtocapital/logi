@@ -50,33 +50,21 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <!-- <li><a href="pricing.html">Pricing</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" class="active" data-i18n="home">Главная<br></a></li>
+          <li><a href="#about" data-i18n="about">О нас</a></li>
+          <li><a href="#services" data-i18n="services">Сервисы</a></li>
+          <li><a href="#contact" data-i18n="contact">Контакты</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="get-a-quote.html">Оставить заявку</a>
+      <a class="btn-getstarted" href="get-a-quote.html" data-i18n="order-btn">Оставить заявку</a>
+
+      <div class="language-switcher">
+        <button onclick="changeLanguage('en')">EN</button>
+        <button onclick="changeLanguage('ru')">RU</button>
+        <button onclick="changeLanguage('uz')">UZ</button>
+    </div>
 
     </div>
   </header>
@@ -86,13 +74,13 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/logistics-header-1920.jpg" alt="" class="hero-bg" data-aos="fade-in">
+      <img src="assets/img/logistics-means-transport-together-with-technological-futuristic-holograms.jpg" alt="" class="hero-bg" data-aos="fade-in">
 
       <div class="container">
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+            <h2 data-aos="fade-up" data-i18n="welcome">MA GLOBAL GROUP</h2>
+            <p data-aos="fade-up" data-aos-delay="100" data-i18n="description">Your Lightning Fast Delivery Partner</p>
 
             <!-- <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
               <input type="text" class="form-control" placeholder="Your ZIP code or City. e.g. New York">
@@ -154,8 +142,8 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
             <div>
-              <h4 class="title">Экспорт импорт</h4>
-              <p class="description">зерновые и бобовые культуры, оборудование, строительные материалы</p>
+              <h4 class="title" data-i18n="export-import">Экспорт импорт</h4>
+              <p class="description" data-i18n="export-desc">зерновые и бобовые культуры, оборудование, строительные материалы</p>
               <a href="#services" class="readmore stretched-link"><span>Узнать больше</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -164,8 +152,8 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
             <div>
-              <h4 class="title">Международная логистика</h4>
-              <p class="description">фуры, автовозы, ж/д, морская перевозка и авиа</p>
+              <h4 class="title" data-i18n="inter-logistic">Международная логистика</h4>
+              <p class="description" data-i18n="logist-desc">фуры, автовозы, ж/д, морская перевозка и авиа</p>
               <a href="#services" class="readmore stretched-link"><span>Узнать больше</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -173,8 +161,8 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
             <div>
-              <h4 class="title">Дистрибьютер разных брендов</h4>
-              <p class="description">косметика, зерновых брендов</p>
+              <h4 class="title" data-i18n="brand-distribution">Дистрибьютер разных брендов</h4>
+              <p class="description" data-i18n="distribut-desc">косметика, зерновых брендов</p>
               <a href="#services" class="readmore stretched-link"><span>Узнать больше</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -198,30 +186,31 @@
           </div>
 
           <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
-            <h3>О нас</h3>
-            <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+            <h3 data-i18n="about">О нас</h3>
+            <p data-i18n="about-desc">
+              MA GLOBAL GROUP оказывает широкий спектр услуг в области грузовых перевозок, таможенного оформления и обработки грузов. 
+              Обеспечивая стратегическое управление цепочками поставок, мы повышаем конкурентоспособность наших клиентов, делая их логистику максимально эффективной.
             </p>
             <ul>
               <li>
                 <i class="bi bi-diagram-3"></i>
                 <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  <h5 data-i18n="export-import">Экспорт импорт</h5>
+                  <p data-i18n="export-desc">зерновые и бобовые культуры, оборудование, строительные материалы</p>
                 </div>
               </li>
               <li>
                 <i class="bi bi-fullscreen-exit"></i>
                 <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  <h5 data-i18n="inter-logistic">Международная логистика</h5>
+                  <p data-i18n="logist-desc">фуры, автовозы, ж/д, морская перевозка и авиа</p>
                 </div>
               </li>
               <li>
                 <i class="bi bi-broadcast"></i>
                 <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                  <h5 data-i18n="brand-distribution">Дистрибьютер разных брендов</h5>
+                  <p data-i18n="distribut-desc">косметика, зерновых брендов</p>
                 </div>
               </li>
             </ul>
@@ -238,9 +227,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Наши услуги<br></span>
-        <h2>Наши услуги</h2>
-        <p>Услуги которые предоставляет наша компания</p>
+        <span data-i18n="Our-services">Наши услуги<br></span>
+        <h2 data-i18n="Our-services">Наши услуги</h2>
+        <p data-i18n="Our-desc">Услуги которые предоставляет наша компания</p>
       </div>
       <!-- End Section Title -->
 
@@ -253,8 +242,8 @@
               <div class="card-img">
                 <img src="assets/img/service-1.jpg" alt="" class="img-fluid">
               </div>
-              <h3>Экспорт импорт </h3>
-              <p>зерновые и бобовые культуры, оборудование, строительные материал</p>
+              <h3 data-i18n="export-import">Экспорт импорт </h3>
+              <p data-i18n="export-desc">зерновые и бобовые культуры, оборудование, строительные материал</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -263,8 +252,8 @@
               <div class="card-img">
                 <img src="assets/img/service-2.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="#" class="stretched-link">Международная логистика</a></h3>
-              <p>фуры, автовозы, ж/д, морская перевозка и авиа</p>
+              <h3><a href="#" class="stretched-link" data-i18n="inter-logistic">Международная логистика</a></h3>
+              <p data-i18n="logist-desc">фуры, автовозы, ж/д, морская перевозка и авиа</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -273,49 +262,11 @@
               <div class="card-img">
                 <img src="assets/img/service-1.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="#" class="stretched-link">Дистрибьютер разных брендов</a></h3>
-              <p>косметика, зерновых брендов</p>
+              <h3><a href="#" class="stretched-link" data-i18n="brand-distribution">Дистрибьютер разных брендов</a></h3>
+              <p data-i18n="distribut-desc">косметика, зерновых брендов</p>
             </div>
           </div><!-- End Card Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/service-4.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="#" class="stretched-link">Trucking</a></h3>
-              <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p>
-            </div>
-          </div> -->
-          
-          <!-- End Card Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/service-5.jpg" alt="" class="img-fluid">
-              </div>
-              <h3>Packaging</h3>
-              <p>Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores beatae consequatur magni voluptates</p>
-            </div>
-          </div> -->
-          
-          <!-- End Card Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/service-6.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="#" class="stretched-link">Warehousing</a></h3>
-              <p>Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut nostrum unde et qui est non quo nulla</p>
-            </div>
-          </div>
-           -->
-          <!-- End Card Item -->
-
         </div>
-
       </div>
 
     </section><!-- /Services Section -->
@@ -329,9 +280,9 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Оставить заявку</h3>
-              <p>Отправьте нам запрос и получите консультацию</p>
-              <a class="cta-btn" href="#">Оставить заявку</a>
+              <h3 data-i18n="order-text">Оставить заявку</h3>
+              <p data-i18n="order-desc">Отправьте нам запрос и получите консультацию</p>
+              <a class="cta-btn" href="#" data-i18n="order-btn">Оставить заявку</a>
             </div>
           </div>
         </div>
@@ -340,278 +291,12 @@
     </section><!-- /Call To Action Section -->
 
     <!-- Features Section -->
-
-    
-    <!-- <section id="features" class="features section">
-
-       <div class="container section-title" data-aos="fade-up">
-        <span>Features</span>
-        <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-      
-
-       <div class="container">
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check"></i> <span>Ullam est qui quos consequatur eos accusamus.</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/features-3.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/features-4.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-        
-
-      </div>
-
-    </section> -->
-    
     <!-- /Features Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <span>Pricing</span>
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div> -->
-      
-      <!-- End Section Title -->
-
-      <!-- <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-
-    </section>
-    
+    <!-- Pricing Section -->    
     <!-- /Pricing Section -->
 
     <!-- Testimonials Section -->
-
-    <!-- <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section> -->
-    
     <!-- /Testimonials Section -->
 
     <!-- Faq Section -->
@@ -619,9 +304,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Часто задаваемые вопросы</span>
-        <h2>Часто задаваемые вопросы</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <span data-i18n="faq-title">Часто задаваемые вопросы</span>
+        <h2 data-i18n="faq-title">Часто задаваемые вопросы</h2>
+        <p data-i18n="faq-desc">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -693,9 +378,9 @@
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <div class="container section-title" data-aos="fade-up">
-          <span>Конакты<br></span>
-          <h2>Наши контакты</h2>
-          <p>Свяжитесь с нами</p>
+          <span data-i18n="contact">Конакты<br></span>
+          <h2 data-i18n="contact-title">Наши контакты</h2>
+          <p data-i18n="contact-desc">Свяжитесь с нами</p>
         </div>
   
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -711,7 +396,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
+                  <h3 data-i18n="address">Address</h3>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div><!-- End Info Item -->
@@ -719,7 +404,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
+                  <h3 data-i18n="call-us">Call Us</h3>
                   <p>+1 5589 55488 55</p>
                 </div>
               </div><!-- End Info Item -->
@@ -727,7 +412,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
+                  <h3 data-i18n="email-us">Email Us</h3>
                   <p>info@example.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -739,19 +424,22 @@
                 <div class="row gy-4">
   
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Ваши имя" required="">
+                    <label data-i18n="name">Имя:</label>
+                    <input type="text" name="name" class="form-control"   required="">
                   </div>
   
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Ваш Email" required="">
+                    <label data-i18n="email">Email:</label>
+                    <input type="email" class="form-control" name="email" data-i18n="email" required="">
                   </div>
   
                   <div class="col-md-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Тема" required="">
+                    <label data-i18n="subject">Тема:</label>
+                    <input type="text" class="form-control" name="subject" data-i18n="subject" required="">
                   </div>
   
                   <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Сообшение" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" data-i18n="message" required=""></textarea>
                   </div>
   
                   <div class="col-md-12 text-center">
@@ -759,7 +447,7 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
   
-                    <button type="submit">Отправить</button>
+                    <button type="submit" data-i18n="send">Отправить</button>
                   </div>
   
                 </div>
@@ -781,9 +469,11 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Logis</span>
+            <span class="sitename">MA GLOBAL GROUP</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>MA GLOBAL GROUP оказывает широкий спектр услуг в области грузовых перевозок, таможенного оформления и обработки грузов. 
+            Обеспечивая стратегическое управление цепочками поставок, мы повышаем конкурентоспособность наших клиентов, делая их логистику максимально эффективной.
+          </p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
